@@ -1,0 +1,12 @@
+{
+  "name": "Buscar Link",
+  "description": "Recupera link do vídeo em um iframe",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "host_permissions": ["*://web.dio.me/course/*"]
+}
