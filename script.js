@@ -1,5 +1,5 @@
 const getSrcIframe = () => {
-  let iframe = document.querySelector("iframe");
+  let iframe = document.querySelector('iframe[src*="youtube"]');
 
   return iframe.src;
 };
@@ -11,11 +11,9 @@ botao.addEventListener("click", async function () {
     function: getSrcIframe,
   });
   let url = convertEmbedToURL(data[0].result)
-
   let btn_link = document.getElementById("link");
   btn_link.href = url;
   btn_link.classList.remove("disabled");
-  console.log(data[0].result);
 });
 
 
